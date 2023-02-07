@@ -1,0 +1,3 @@
+[submodule "lz-engine/vendor/spdlog"]
+	path = lz-engine/vendor/spdlog
+	url = https://github.com/gabime/spdlog

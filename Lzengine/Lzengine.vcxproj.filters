@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lzengine">
+      <UniqueIdentifier>{01481942-ED14-744D-162E-62F5025AA9DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lzengine\Events">
+      <UniqueIdentifier>{C5C88F07-3154-FDCB-3A65-80C0A66F59CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Lzengine.h" />
+    <ClInclude Include="src\Lzengine\Application.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Core.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\EntryPoint.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Events\ApplicationEvent.h">
+      <Filter>Lzengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Events\Event.h">
+      <Filter>Lzengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Events\KeyEvent.h">
+      <Filter>Lzengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Events\MouseEvent.h">
+      <Filter>Lzengine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Log.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Lzengine\Application.cpp">
+      <Filter>Lzengine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lzengine\Log.cpp">
+      <Filter>Lzengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
