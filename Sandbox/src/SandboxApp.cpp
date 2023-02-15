@@ -2,11 +2,11 @@
 
 class Sandbox : public LZE::Application {
 public:
-	Sandbox() {}
+    Sandbox() {}
 
-	~Sandbox() {}
+    ~Sandbox() {}
 };
 
 LZE::Application* LZE::CreateApplication() {
-	return new Sandbox();
+    return new Sandbox();
 }

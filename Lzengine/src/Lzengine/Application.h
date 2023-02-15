@@ -2,18 +2,28 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "Lzengine/Events/ApplicationEvent.h"
+
+#include "Window.h"
 
 namespace LZE {
 
-	class __declspec(dllexport) Application {
-	public:
-		Application();
-		virtual ~Application();
+    class LZE_API Application {
+    public:
+        Application();
+        virtual ~Application();
 
-		void Run();
-	};
+        void Run();
 
-	// To be defined in client application
-	Application* CreateApplication();
+        void OnEvent(Event& e);
+    private:
+        bool OnWindowClose(WindowCloseEvent& e);
+
+        std::unique_ptr<Window> m_Window;
+        bool m_Running = true;
+    };
+
+    // To be defined in client application
+    Application* CreateApplication();
 }
 

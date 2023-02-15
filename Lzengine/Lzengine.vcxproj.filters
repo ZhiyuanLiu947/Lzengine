@@ -7,6 +7,12 @@
     <Filter Include="Lzengine\Events">
       <UniqueIdentifier>{C5C88F07-3154-FDCB-3A65-80C0A66F59CC}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lzengine\Platform">
+      <UniqueIdentifier>{7515C346-E12B-C1DC-2AA3-4CFE96F89164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lzengine\Platform\Windows">
+      <UniqueIdentifier>{AF64F551-1B27-29DC-64D7-B768D0D801BA}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Lzengine.h" />
@@ -34,6 +40,13 @@
     <ClInclude Include="src\Lzengine\Log.h">
       <Filter>Lzengine</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lzengine\Platform\Windows\WindowsWindow.h">
+      <Filter>Lzengine\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\Window.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lzepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lzengine\Application.cpp">
@@ -42,5 +55,9 @@
     <ClCompile Include="src\Lzengine\Log.cpp">
       <Filter>Lzengine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Lzengine\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Lzengine\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lzepch.cpp" />
   </ItemGroup>
 </Project>
