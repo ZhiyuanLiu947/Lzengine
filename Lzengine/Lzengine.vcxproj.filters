@@ -37,6 +37,12 @@
     <ClInclude Include="src\Lzengine\Events\MouseEvent.h">
       <Filter>Lzengine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lzengine\Layer.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lzengine\LayerStack.h">
+      <Filter>Lzengine</Filter>
+    </ClInclude>
     <ClInclude Include="src\Lzengine\Log.h">
       <Filter>Lzengine</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lzengine\Application.cpp">
+      <Filter>Lzengine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lzengine\Layer.cpp">
+      <Filter>Lzengine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lzengine\LayerStack.cpp">
       <Filter>Lzengine</Filter>
     </ClCompile>
     <ClCompile Include="src\Lzengine\Log.cpp">

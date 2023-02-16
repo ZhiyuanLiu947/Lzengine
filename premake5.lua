@@ -21,7 +21,7 @@ project "Lzengine"
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
     pchheader "lzepch.h"
-    pchsource "Lzegnine/src/lzepch.cpp"
+    pchsource "Lzengine/src/lzepch.cpp"
 
     files {
         "%{prj.name}/src/**.h",
@@ -54,14 +54,17 @@ project "Lzengine"
     
     filter "configurations:Debug"
         defines "LZE_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "LZE_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "LZE_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -97,12 +100,15 @@ project "Sandbox"
     
     filter "configurations:Debug"
         defines "LZE_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "LZE_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "LZE_DIST"
+        buildoptions "/MD"
         optimize "On"
